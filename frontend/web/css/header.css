@@ -1,0 +1,141 @@
+header {
+	min-width: 230px;
+	width: 100%;
+}
+
+.clear{
+	clear:both;
+}
+
+#headerwrap{
+	background: #F3F3F5;
+
+}
+
+#headerwrap .cloud{
+	background: url(../img/cloud.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 164px;
+	max-height: 164px;
+}
+	#headerwrap .cloud .topbg{
+		width: 1200px;
+		margin: 0 auto;
+	}
+		#headerwrap .cloud .topbg .logo{
+			display: block;
+			width: 537px;
+			height: 164px;
+			margin: 0;
+			float: left;
+			
+		}
+		#headerwrap .cloud .topbg .topcall{
+			display: none;
+			width: 215px;
+			height: 164px;
+			float: right; 
+			
+		}
+	#headerwrap .topmenuwrap{
+		background: url(../img/vawes.jpg);
+		background-repeat: no-repeat;
+		display: none;
+		width: 100%;
+		height: 61px;
+		text-align: right;
+	}
+		 #headerwrap .topmenuwrap .topmenu{
+			font-family: UbuntuM;
+			position: relative;
+			font-size: 19px;
+			color: #fff;
+			padding-top: 20px;
+			width: 1200px;
+			margin: 0 auto;
+			
+		}
+
+		 #headerwrap .topmenuwrap .topmenu a{
+			font-family: ExoRegular;
+			font-size: 19px;
+			color: #fff;
+			top: 0px;
+			cursor: pointer;
+			text-decoration: none;
+			margin-right: 10px;
+			margin-left: 5px;
+		}
+
+		 #headerwrap .topmenuwrap .topmenu a:hover{
+			color: #C1272D;
+		}
+
+	#headerwrap .sldr{
+		max-width: 1200px;
+		max-height: 465px;
+		margin: 0 auto;
+		display: none;
+	}
+	#headerwrap .sldrover{
+		width: 1200px;
+		height: 465px;
+		margin: 0 auto;
+		z-index: 9999;
+		background: url(../img/sldrover.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		background-position: 0px;
+		position: absolute;
+		top: 222px;
+		display: none;
+	}
+	#headerwrap .btns{
+		width: 1200px;
+		height: 176px;
+		margin: 0 auto;
+		background: url(../img/buttons.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		background-position: 0px;
+		display: none;
+		
+	}	
+
+@media screen and (min-width:0px) and (max-width:1199px) {
+	#headerwrap .cloud .topbg{
+		width: 100%;
+		overflow: hidden;
+	}
+		 #headerwrap .topmenuwrap .topmenu{
+			padding-top: 20px;
+			width: 100%;
+			margin: 0 auto;
+			
+		}	
+	#headerwrap .sldr{
+		max-width: 100%;
+		margin: 0 auto;
+	}		
+}
+
+@media screen and (min-width:0px) and (max-width:756px) {
+	#headerwrap .cloud .topbg .topcall{
+		display: none;
+	}
+	#headerwrap .topmenuwrap{
+		text-align: center;
+	}	
+		 #headerwrap .topmenuwrap .topmenu{
+			padding-top: 5px;
+			width: 100%;
+			margin: 0 auto;
+			
+		}	
+}	
+}
