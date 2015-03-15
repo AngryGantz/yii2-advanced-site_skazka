@@ -1,13 +1,68 @@
 <?php
+ use yii\bootstrap\ActiveForm;
+use yii\helpers\Html;
 /* @var $this yii\web\View */
+/* @var $form yii\widgets\ActiveForm */
+/* @var $model \frontend\models\ContactForm */
 $this->title = Yii::$app->name;
 ?>
+
+
+<?php
+
+
+
+//$form = ActiveForm::begin(); //Default Active Form begin
+$form = ActiveForm::begin([
+    'id' => 'active-form',
+    'options' => [
+                'class' => 'form-horizontal',
+                'enctype' => 'multipart/form-data'
+                ],
+])
+?>
+
+<?= $form->field($model,'name'); ?>
+
+<?
+ActiveForm::end();
+?>
+
+
+<!-- begin btnmenucontainer  -->
+<div class="btnmenucontainer">
+    <div class="btnmenuwrap1">
+        <div class="btnmenu"><a href="#" title="">Матрасы</a></div>
+    </div>
+    <div class="btnmenuwrap2">
+        <div class="btnmenu"><a href="#" title="">Топлеры</a></div>
+    </div>
+    <div class="btnmenuwrap3">
+        <div class="btnmenu"><a href="#" title="">Детские матрасы</a></div>
+    </div>
+    <div class="btnmenuwrap4">
+        <div class="btnmenu"><a href="#" title="">Кроватки манежки</a></div>
+    </div>
+    <div class="btnmenuwrap5">
+        <div class="btnmenu"><a href="#" title="">Одеяла и подушки</a></div>
+    </div>
+    <div class="btnmenuwrap6">
+        <div class="btnmenu"><a href="#" title="">Мягкая мебель</a></div>
+    </div>
+    
+</div>
+<!-- end btnmenucontainer -->
+
 
 
 
 <div class="site-index">
 
+
+
     <div class="jumbotron">
+
+
         <h1>Congratulations!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>

@@ -12,14 +12,10 @@ $this->beginContent('@frontend/views/layouts/_base.php')
             'key'=>'index'
         ]) ?>
     </div>
-
-
     <div class="container">
-
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
-
         <?php if(Yii::$app->session->hasFlash('alert')):?>
             <?= \yii\bootstrap\Alert::widget([
                 'body'=>ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'body'),
@@ -28,6 +24,5 @@ $this->beginContent('@frontend/views/layouts/_base.php')
         <?php endif; ?>
 
         <?= $content ?>
-
     </div>
 <?php $this->endContent() ?>

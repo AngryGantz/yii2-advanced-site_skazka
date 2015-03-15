@@ -1,3 +1,20 @@
+@font-face {
+font-family: UbuntuM;
+src: url(../fonts/Ubuntu-M.ttf) format("opentype"); 
+}
+
+@font-face {
+font-family: UbuntuL;
+src: url(../fonts/Ubuntu-L.ttf) format("opentype"); 
+}
+
+@font-face {
+font-family: UbuntuR;
+src: url(../fonts/Ubuntu-R.ttf) format("opentype"); 
+}
+
+
+
 html,
 body {
   height: 100%;
@@ -87,9 +104,13 @@ a.desc:after {
 /*  height: 61px;
   border-width: 0 0 1px;
 */ 
-  position: static;
+  
+  /*position: static;
+  
   background: url(../img/vawes.jpg) #1d7ae2;
   background-repeat: no-repeat;
+  */
+
 }
 
 .navbar-inverse{
@@ -134,3 +155,134 @@ a.right.carousel-control{
   background-image: none;
   
 }
+
+
+.btnmenucontainer{
+	display: block;
+	min-width: 1315px;
+}
+
+.btnmenuwrap1{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn1.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+
+}
+
+.btnmenuwrap2{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn2.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+.btnmenuwrap3{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn3.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+.btnmenuwrap4{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn4.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+.btnmenuwrap5{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn5.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+.btnmenuwrap6{
+	width: 192px;
+	height: 177px;
+	background: url("../img/menubtn6.png");
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: table-cell;
+}
+
+
+
+	.btnmenu {
+/*		-moz-box-shadow: inset 0 0 5px rgba(255,255,190,.75); 
+		-webkit-box-shadow: inset 0 0 5px rgba(255,255,190,.75); 
+		box-shadow: inset 0 0 5px rgba(255,255,190,.75);
+		width: 187px;
+		height: 54px;
+		-moz-border-radius: 15px 15px 0 0;
+		-webkit-border-radius: 15px 15px 0 0;
+		border-radius: 15px 15px 0 0; 
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box; 
+		background-color: #0066FF; 
+*/
+		top: 300px;
+		display: block;
+		margin-left: 3px;
+		margin-bottom: 2px;
+		text-align: center;
+
+	}
+		.btnmenu a{
+			color: #FFF;
+			font-family: UbuntuR;
+			font-size: 15px;
+			text-decoration: none;
+			line-height: 50px;
+			padding: 14px 20px 16px 20px;
+		}
+
+			.btnmenu a:hover{
+				color: #FFF;
+				text-decoration: none;
+				line-height: 50px;
+				background-color: #CC3333; 
+			
+			}
+
+.hrtop{
+	padding: 0;
+	margin: 0;
+    height: 6px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);	
+
+}
+
+
+@media screen and (min-width:0px) and (max-width:1315px) {
+	.btnmenucontainer{
+		display: none;
+		min-width: 1315px;
+	}
+}    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
