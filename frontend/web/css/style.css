@@ -126,11 +126,11 @@ a.desc:after {
 }
 
 .carouselwrap{
-
+	margin-top: 45px;
    background-color: #f3f3f5; 
 }
 
-
+/*
 .carousel{
   max-width: 1170px;
   margin: 0 auto;
@@ -154,7 +154,7 @@ a.right.carousel-control{
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
   background-image: none;
   
-}
+}*/
 
 
 .btnmenucontainer{
@@ -266,6 +266,10 @@ a.right.carousel-control{
 
 }
 
+
+.navbar-brand{
+	padding: 0;
+}
 
 @media screen and (min-width:0px) and (max-width:1315px) {
 	.btnmenucontainer{

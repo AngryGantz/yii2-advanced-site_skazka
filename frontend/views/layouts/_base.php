@@ -27,6 +27,7 @@ use yii\bootstrap\NavBar;
         NavBar::begin([
             // 'brandLabel' => Yii::$app->name,
             // 'brandUrl' => Yii::$app->homeUrl,
+            'brandLabel' => '<img src="/img/logosm.png" alt="">',
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top',
             ],

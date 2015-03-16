@@ -7,11 +7,7 @@ use yii\widgets\Breadcrumbs;
 
 $this->beginContent('@frontend/views/layouts/_base.php')
 ?>
-    <div class="carouselwrap">
-        <?= \common\components\widgets\DbCarousel::widget([
-            'key'=>'index'
-        ]) ?>
-    </div>
+
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],

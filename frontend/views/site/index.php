@@ -4,29 +4,13 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
-$this->title = Yii::$app->name;
-?>
+$this->title = Yii::$app->name;?>
 
-
-<?php
-
-
-
-//$form = ActiveForm::begin(); //Default Active Form begin
-$form = ActiveForm::begin([
-    'id' => 'active-form',
-    'options' => [
-                'class' => 'form-horizontal',
-                'enctype' => 'multipart/form-data'
-                ],
-])
-?>
-
-<?= $form->field($model,'name'); ?>
-
-<?
-ActiveForm::end();
-?>
+    <div class="carouselwrap">
+        <?= \common\components\widgets\DbCarousel::widget([
+            'key'=>'index'
+        ]) ?>
+    </div>
 
 
 <!-- begin btnmenucontainer  -->
