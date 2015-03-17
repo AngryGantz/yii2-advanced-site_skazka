@@ -269,7 +269,10 @@ a.right.carousel-control{
 
 .navbar-brand{
 	padding: 0;
+	height: 24px;
 }
+
+
 
 @media screen and (min-width:0px) and (max-width:1315px) {
 	.btnmenucontainer{

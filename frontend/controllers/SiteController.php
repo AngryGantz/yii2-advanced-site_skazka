@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use Yii;
 use frontend\models\ContactForm;
+use common\models\Goods;
 use yii\web\Controller;
 
 /**
@@ -34,7 +35,14 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $l=3;
+        $grp1=Goods::find()->where(['idcat' => 1])->limit($l)->all();
+        $grp2=Goods::find()->where(['idcat' => 2])->limit($l)->all();
+        return $this->render('index', 
+            [
+                'grp1'=>$grp1,
+                'grp2'=>$grp2
+            ]);
     }
 
     public function actionContact()
@@ -59,4 +67,36 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    public function actionCallorder($userid)
+            {
+                $model = new \app\models\CallOrderForm();
+                $model->id =$userid;
+                return $this->renderPartial('callorder', [
+                    'model' => $model,
+                ]);
+            }
+             
+    public function actionSubmitcallorder()
+            {
+                $model = new \app\models\CallOrderForm();
+                $model->load(Yii::$app->request->post());
+                 
+                if($model->load(Yii::$app->request->post())  && $model->validate(null, false)) {
+                     
+                    //save the password
+                    $success=true;
+                    return json_encode($success);
+                }
+                else
+                {
+                    return $this->renderPartial('callorder', [
+                    'model' => $model,
+                    ]);
+                 
+                }
+            }
+
+
+
 }

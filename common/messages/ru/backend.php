@@ -56,6 +56,8 @@ return [
     'Flush' => 'Сбросить',
     'Free Swap' => 'Свободно Swap',
     'Free memory' => 'Свободно памяти',
+    'Goods' => 'Товары',
+    'Goods Categories' => 'Категории товаров',
     'Hello, {username}' => 'Привет, {username}',
     'Hostname' => 'Имя хоста',
     'I18n Messages' => 'I18N переводы',

@@ -7,9 +7,7 @@ use yii\widgets\Breadcrumbs;
 
 $this->beginContent('@frontend/views/layouts/_base.php')
 ?>
-
-    <div class="container">
-        <?= Breadcrumbs::widget([
+   <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?php if(Yii::$app->session->hasFlash('alert')):?>
@@ -18,7 +16,5 @@ $this->beginContent('@frontend/views/layouts/_base.php')
                 'options'=>ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'options'),
             ])?>
         <?php endif; ?>
-
-        <?= $content ?>
-    </div>
+       <?= $content ?>
 <?php $this->endContent() ?>

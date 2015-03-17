@@ -1,0 +1,108 @@
+.gbox{
+	text-align: left;
+	max-width: 277px;
+	float: left;
+	margin-right: 40px;
+	font-family: UbuntuR;
+	font-size: 14px;
+	border-color: #C6C6C6;
+}
+
+	.gbox .pic{
+		max-width: 277px;
+	}
+
+	.gbox h1{
+		font-size: 22px;
+	}
+
+	.gbox .lblblock1{
+		max-height: 65px;
+		max-width: 277px;
+		text-align: center;
+	}
+
+		.gbox .lblblock1 .titlbl{
+			float: left;
+			border-right: 1px solid;
+			border-top: 2px solid;
+			border-left: 2px solid;
+			width: 91px;
+			border-color: #C6C6C6;
+			padding: 0;
+			margin: 0;
+		}
+		.gbox .lblblock1 .titlbllast{
+			float: left;
+			width: 91px;
+			border-top: 2px solid;
+			border-right: 2px solid;
+			border-color: #C6C6C6;
+			padding: 0;
+			margin: 0;
+		}
+
+		.gbox .lblblock1 .val{
+			font-family: UbuntuB;
+			font-size: 15px;
+			float: left;
+			border-right: 1px solid;
+			border-top: 1px solid;
+			border-left: 1px solid;
+			width: 91px;
+			height: 39px;
+			line-height: 35px;
+			background: #1c7ae3;
+			border-color: #C6C6C6;
+			color: #fff;
+		}
+
+	.gbox .lblblock2{
+		margin-top: 15px;
+		font-family: UbuntuR;
+		font-size: 16px;
+		height: 37px;
+		max-width: 273px;
+		background: #1c7ae3;
+		color: #fff;
+		padding-top: 2px;
+		padding-left: 15px;
+		
+	}
+
+.ddmm{
+	color: #000;
+	cursor: pointer;
+	text-align: center;
+
+}
+.clear{
+	clear: both;
+}
+.hidn{
+	display: none;
+}
+
+.arrow{
+	
+	display: table-cell;
+	vertical-align: middle;
+	height:350px;
+	width: 190px;
+	margin-top: 66px;
+	background: url("../img/strelka116-250.png");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.arrow:hover{
+	margin-top: 66px;
+	background: url("../img/strelka119-250.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	
+}
+.panel-index{
+	margin-bottom: 0;
+}

@@ -28,6 +28,7 @@ return [
     'Check your email for further instructions.' => 'Проверьте ваш e-mail.',
     'Confirm Password' => 'Подтвердите пароль',
     'Contact' => 'Контакты',
+    'Call Order' => 'Заказать звонок',
     'E-mail' => 'E-mail',
     'Email' => 'Email',
     'Error while oauth process.' => 'Ошибка в процессе OAuth авторизации.',
@@ -41,6 +42,23 @@ return [
     'Logout' => 'Выход',
     'Male' => 'Мужской',
     'Name' => 'Имя',
+    'Phone' => 'Телефон',
+    
+    'Production' => 'Продукция',
+    'Bonel' => 'Матрасы пружинные Бонель',
+    'MatrasPrujina' => 'Матрасы c независимыми пружинами',
+    'MatrasNoPrujina' => 'Матрасы Латексные и беспружинные',
+    'Toplers' => 'Топлеры',
+    'Child' => 'Детские матрасы',
+    'Manej' => 'Кроватки-манежи',
+    'Odeyalo' => 'Одеяла и подушки',
+    'Mebel' => 'Мягкая мебель',
+    'Krovati' => 'Кровати',
+    'Tkani' => 'Ткани',
+
+    'Info' => 'Информация',
+    
+
     'Need an account? Sign up.' => 'Нужен аккаунт? Зарегистрируйтесь',
     'New password was saved.' => 'Новый пароль был сохранен',
     'Page not found' => 'Страница не найдена',

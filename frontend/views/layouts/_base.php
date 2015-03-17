@@ -7,6 +7,15 @@ use yii\bootstrap\NavBar;
 /* @var $content string */
 
 \frontend\assets\FrontendAsset::register($this);
+$this->registerJsFile(
+    'assets/js/co.js', ['depends' => [
+'yii\web\YiiAsset',
+'yii\bootstrap\BootstrapAsset'],
+]);
+
+
+
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -36,11 +45,43 @@ use yii\bootstrap\NavBar;
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
                 ['label' => Yii::t('frontend', 'Home'), 'url' => ['/site/index']],
-                ['label' => Yii::t('frontend', 'About'), 'url' => ['/page/view', 'slug'=>'about']],
-                ['label' => Yii::t('frontend', 'Payment and delivery'), 'url' => ['/page/view', 'slug'=>'payment']],
-                ['label' => Yii::t('frontend', 'Selection of mattress'), 'url' => ['/page/view', 'slug'=>'select']],
-                ['label' => Yii::t('frontend', 'Novelty'), 'url' => ['/page/view', 'slug'=>'novelty']],
-                ['label' => Yii::t('frontend', 'Contacts'), 'url' => ['/page/view', 'slug'=>'contacts']],
+                [
+                    'label'=>Yii::t('frontend', 'Production'), 'url' => ['#'],
+                    'items'=>
+                    [
+                        ['label' => Yii::t('frontend', 'Bonel'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'MatrasPrujina'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'MatrasNoPrujina'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Toplers'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Child'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Manej'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Odeyalo'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Mebel'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Krovati'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Tkani'), 'url' => ['/page/view', 'slug'=>'about']],
+
+                    ]
+                ],
+
+                [
+                    'label'=>Yii::t('frontend', 'Info'), 'url' => ['#'],
+                    'items'=>
+                    [
+                        ['label' => Yii::t('frontend', 'About'), 'url' => ['/page/view', 'slug'=>'about']],
+                        ['label' => Yii::t('frontend', 'Payment and delivery'), 'url' => ['/page/view', 'slug'=>'payment']],
+                        ['label' => Yii::t('frontend', 'Selection of mattress'), 'url' => ['/page/view', 'slug'=>'select']],
+                        ['label' => Yii::t('frontend', 'Novelty'), 'url' => ['/page/view', 'slug'=>'novelty']],
+                        ['label' => Yii::t('frontend', 'Contacts'), 'url' => ['/page/view', 'slug'=>'contacts']],
+
+                    ]
+                ],
+
+                [
+                    'label' => Yii::t('frontend', 'Call Order'), 
+                    'url' => ['callorder', 'slug'=>'callorder'], 
+                    'options' => ['class' => 'callorder', 'data-userid'=>"22"]
+                ]
+
 
                 // ['label' => Yii::t('frontend', 'Articles'), 'url' => ['/article/index']],
                 // ['label' => Yii::t('frontend', 'Contact'), 'url' => ['/site/contact']],
@@ -97,6 +138,25 @@ use yii\bootstrap\NavBar;
     </footer>
 
 <?php $this->endBody() ?>
+<!-- Modal -->
+  <div class="modal fade" id="my-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+          <h4 class="modal-title">Заказ звонка</h4>
+          Наши специалисты помогут вам с выбором
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+
 </body>
 </html>
 <?php $this->endPage() ?>

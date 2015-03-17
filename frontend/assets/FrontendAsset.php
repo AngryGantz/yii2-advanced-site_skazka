@@ -20,6 +20,7 @@ class FrontendAsset extends AssetBundle
     public $css = [
         'css/style.css',
         'css/header.css',
+        'css/goods.css',
     ];
 
     public $depends = [
