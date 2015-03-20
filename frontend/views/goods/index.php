@@ -2,47 +2,61 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-
+use yii\web\Session;
+use yii\bootstrap\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\Goodssearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Goods';
+$this->title = $catname;
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goods-index">
+<!--         <h1><?= Html::encode($this->title) ?></h1>  -->
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <!-- begin row (full wrap for 2-col content  -->
+    <div class="row">
+        <!-- Левый сайдбар -->    
+        <div class="col-lg-3">
+            <?php include Yii::getAlias('@frontend/views/layouts/_left.php'); ?>                    
+        </div>
+        <!-- begin col-lg-8  -->
+        <!-- Основной контент -->
+        <div class="col-lg-9">
+            <span class="titbread"> 
+            <?php
+               if ($idcat==1) echo '
+                    ПРУЖИННЫЕ БОНЕЛЬ /
+                    <a href="index?idcat=2" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ / </a>&nbsp;
+                    <a href="index?idcat=3" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>';
+               if ($idcat==2) echo '
+                    НЕЗАВИСИМЫЕ ПРУЖИНЫ /
+                    <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ / </a>&nbsp;
+                    <a href="index?idcat=3" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>';
+               if ($idcat==3) echo '
+                    ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ /
+                    <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ / </a>&nbsp;
+                    <a href="index?idcat=2" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ</a>';
+                $cats = array(4, 5, 6, 7,8,9,10);
+                if (in_array($idcat, $cats)) echo $catname;
+             ?>   
+            </span>
+            <?php 
+                   
+             ?>            
+            <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Goods', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+            <?php 
+                if ($idcat==1) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
+                if ($idcat==2) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
+                if ($idcat==3) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
+            ?>
+        </div>
+        <!-- end col-lg-8 -->
+    </div>
+    <!-- end row (full wrap for 2-col content -->
 
-    <?= GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'idcat',
-            'name',
-            'height',
-            'hard',
-            // 'gload',
-            // 'cost1',
-            // 'cost2',
-            // 'cost3',
-            // 'cost4',
-            // 'cost5',
-            // 'cost6',
-            // 'sostav',
-            // 'material',
-            'pic',
 
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
-    ]); ?>
 
 </div>

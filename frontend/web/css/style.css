@@ -26,7 +26,7 @@ body {
   padding: 0 0 60px;
 }
 .wrap > .container {
-  padding: 70px 15px 20px;
+  padding: 70px 0px 20px;
 }
 
 .wrap > .homecontainer {
@@ -100,16 +100,13 @@ a.desc:after {
 }
 
 .navbar-fixed-top {
-  /*top: 164px;*/
-/*  height: 61px;
-  border-width: 0 0 1px;
-*/ 
-  
-  /*position: static;
-  
+  top: 164px;
+  height: 61px;
+  border-width: 0 0 1px 0;
+  position: static;
   background: url(../img/vawes.jpg) #1d7ae2;
   background-repeat: no-repeat;
-  */
+  
 
 }
 
@@ -119,14 +116,16 @@ a.desc:after {
 
 .navbar-inverse .navbar-nav > li > a{
   color: #FFF;
+  margin-top: 7px;
 }
 
 .navbar{
   margin-bottom: 0;
+  margin-top: ;
 }
 
 .carouselwrap{
-	margin-top: 45px;
+	/*margin-top: 45px;*/
    background-color: #f3f3f5; 
 }
 

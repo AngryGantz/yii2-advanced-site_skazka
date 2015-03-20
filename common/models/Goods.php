@@ -79,6 +79,16 @@ class Goods extends \yii\db\ActiveRecord
         return $this->hasOne(Goodscat::className(), ['id' => 'idcat']);
     }
 
+
+
+    public function getCatnamebyid($idcat)
+    {
+        $rec = Goodscat::find()->where(['id' => $idcat])->one();
+        return $rec->name;
+    }
+
+
+
     public function recently($limit=4, $idcat=1)
     {
         $this->getDbCriteria()->mergeWith(array(

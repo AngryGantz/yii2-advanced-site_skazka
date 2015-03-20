@@ -36,7 +36,7 @@ $this->registerJsFile(
         NavBar::begin([
             // 'brandLabel' => Yii::$app->name,
             // 'brandUrl' => Yii::$app->homeUrl,
-            // 'brandLabel' => '<img src="/img/logosm.png" alt="">',
+            'brandLabel' => '<img src="/img/logosm.png" alt="">',
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top',
             ],
@@ -50,11 +50,11 @@ $this->registerJsFile(
                 ['label' => Yii::t('frontend', 'Selection of mattress'), 'url' => ['/page/view', 'slug'=>'select']],
                 ['label' => Yii::t('frontend', 'Novelty'), 'url' => ['/page/view', 'slug'=>'novelty']],
                 ['label' => Yii::t('frontend', 'Contacts'), 'url' => ['/page/view', 'slug'=>'contacts']],
-                // [
-                //     'label' => Yii::t('frontend', 'Call Order'), 
-                //     'url' => ['callorder', 'slug'=>'callorder'], 
-                //     'options' => ['class' => 'callorder', 'data-userid'=>"22"]
-                // ],
+                [
+                    'label' => Yii::t('frontend', 'CallOrder'), 
+                    'url' => ['callorder', 'slug'=>'callorder'], 
+                    'options' => ['class' => 'callorder', 'data-userid'=>"22"]
+                ],
 
                 // ['label' => Yii::t('frontend', 'Articles'), 'url' => ['/article/index']],
                 // ['label' => Yii::t('frontend', 'Contact'), 'url' => ['/site/contact']],

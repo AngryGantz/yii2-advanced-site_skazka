@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use Yii;
 use frontend\models\ContactForm;
+use frontend\models\CallOrderForm;
 use common\models\Goods;
 use yii\web\Controller;
 
@@ -68,10 +69,10 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionCallorder($userid)
+    public function actionCallorder($articul)
             {
-                $model = new \app\models\CallOrderForm();
-                $model->id =$userid;
+                $model = new CallOrderForm();
+                $model->goodsarticul =$articul;
                 return $this->renderPartial('callorder', [
                     'model' => $model,
                 ]);
@@ -79,15 +80,28 @@ class SiteController extends Controller
              
     public function actionSubmitcallorder()
             {
-                $model = new \app\models\CallOrderForm();
-                $model->load(Yii::$app->request->post());
+                $model = new CallOrderForm();
+                // $model->load(Yii::$app->request->post());
                  
-                if($model->load(Yii::$app->request->post())  && $model->validate(null, false)) {
-                     
-                    //save the password
+                if ($model->load(Yii::$app->request->post()) && $model->validate(null, false)) {
+                    if ($model->contact(Yii::$app->params['adminEmail'])) {
+
                     $success=true;
                     return json_encode($success);
-                }
+
+
+                        // Yii::$app->getSession()->setFlash('alert', [
+                        //     'body'=>Yii::t('frontend', 'Thank you for contacting us. We will respond to you as soon as possible.'),
+                        //     'options'=>['class'=>'alert-success']
+                        // ]);
+                    }
+                }                 
+                // if($model->load(Yii::$app->request->post())  && $model->validate(null, false)) {
+                     
+                //     //save the password
+                //     $success=true;
+                //     return json_encode($success);
+                // }
                 else
                 {
                     return $this->renderPartial('callorder', [

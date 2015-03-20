@@ -27,7 +27,16 @@ use yii\widgets\ActiveForm;
 	])->textInput(['placeholder' => $model->getAttributeLabel( 'phone' )]) 
 ?>
 
+
+
+
+<?= 
+	$form->field($model, 'goodsarticul')->hiddenInput()->label(false); 
+	 // $form->field($model, 'goodsarticul'); 
+?>
    
+
+
     <?= Html::activeHiddenInput($model, 'id') ?>
 
 

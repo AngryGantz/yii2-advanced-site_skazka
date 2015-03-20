@@ -27,9 +27,10 @@ $config = [
 
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' => YII_ENV_DEV,
+//            'useFileTransport' => YII_ENV_DEV,
+            'useFileTransport' => false,
             'messageConfig' => [
-                'charset' => 'UTF-8',
+                'charset' => 'utf8',
                 'from' => getenv('ADMIN_EMAIL')
             ]
         ],

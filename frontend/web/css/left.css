@@ -1,0 +1,190 @@
+.leftwrap {
+	
+	text-align: left;
+}
+
+
+.leftmnuul{
+	margin-top: 50px;
+	padding-left: 0;
+}
+
+.leftlimnu {
+	width: 200px;
+	height: 40px;
+	background-color: #1c7ae3;
+	font-family: UbuntuL;
+	font-size: 18px;
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.leftlimnu a{
+	color: #FFF;	
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.leftlimnu a:hover{
+	color: #FFF;	
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	display: block;
+	background-color: #C1272D;
+}
+
+.leftcall{
+	font-family: UbuntuR;	
+	color: #FFF;
+	background-color: #1c7ae3;	
+	width: 215px;
+}
+
+	.leftcall .titl{
+		margin-top: 20px;
+		padding-top: 15px;
+		font-size: 17px;	
+		text-align: center;	
+	}
+
+	.leftcall .desc{
+		width: 172px;
+		height: 40px;
+		display: block;
+		margin-top: 15px;
+		color: #fff;
+		text-align: center;
+		padding-top: 0px;
+		font-size: 12px;
+		margin-left: 21px;
+		border: 2px solid;
+		border-color: #fff;
+	}
+
+	.leftcall .frm{
+		margin-top: 15px;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		margin-left: 10px;
+	}
+
+	.leftcall .frm .inp1{	
+		border: 0px solid #333333; 
+		background: url("../img/man.png") #ffffff;;
+		background-repeat: no-repeat;
+		background-position: 15px;
+		color: #420a12;
+		padding-left: 50px;
+		font-size: 18px;
+		line-height: 36px;
+
+	}
+
+	.leftcall .frm .inp2{	
+		margin-top: 12px;
+		border: 0px solid #333333; 
+		background: url("../img/phone2.png") #ffffff;;
+		background-repeat: no-repeat;
+		background-position: 15px;
+		color: #420a12;
+		padding-left: 50px;
+		font-size: 18px;
+		line-height: 42px;
+	}
+
+	.leftcall .frm .btn {
+		width: 180px;
+		height: 50px;
+		-moz-box-shadow: 1px 1px 4px rgba(28,10,18,.74); /* drop shadow */
+		-webkit-box-shadow: 1px 1px 4px rgba(28,10,18,.74); /* drop shadow */
+		box-shadow: 1px 1px 4px rgba(28,10,18,.74); /* drop shadow */
+	    color:#fff;
+	    margin-top: 20px;
+	    font-size: 16px;
+	    background-color: #ed1c24;
+
+		-moz-border-radius: 10px; 
+		-webkit-border-radius: 10px; 
+		-khtml-border-radius:10px; 
+		border-radius: 10px; 
+		outline:none;
+	}
+
+.leftplacehold{
+	margin-top: 30px;
+	background-color: #C69C6D;
+	display: block;
+	height:100%;
+	width: 248px;
+	min-height: 250px;
+	
+}
+
+.leftplacehold .contact{
+	text-align: left;
+	padding-top: 30px;
+	margin-left: 30px;
+}
+
+.leftplacehold p{
+	color: #FFF;
+	font-family: ExoLight;
+	font-size: 16px;
+}
+
+.points{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.diffleft{
+	background: url("../img/diffleft.png");
+	background-repeat: no-repeat;
+	font-family: UbuntuR;	
+	color: #4979DF;
+	text-decoration: none;
+	font-size: 14px;
+	width: 205px;
+	height: 40px;
+	display: inline-block;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-top: 20px;
+}
+
+.lm{
+	padding-left: 0;
+	
+}
+
+
+.lm li{
+	list-style-type: none;	
+	margin-top: 20px;
+	padding-left: 10px;	
+}
+
+
+.lm li a{
+	font-family: UbuntuL;	
+	font-size: 18px;
+	color: #000;
+
+}
+
+@media screen and (min-width:0px) and (max-width:960px) {
+	.leftplacehold{
+		display: none;
+	}
+	.lfttop{
+		display: none;
+	}
+}
+
+

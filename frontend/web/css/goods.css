@@ -2,7 +2,7 @@
 	text-align: left;
 	max-width: 277px;
 	float: left;
-	margin-right: 40px;
+	margin-right: 10px;
 	font-family: UbuntuR;
 	font-size: 14px;
 	border-color: #C6C6C6;
@@ -105,4 +105,72 @@
 }
 .panel-index{
 	margin-bottom: 0;
+}
+
+.titbread{
+	font-family: UbuntuR;
+	font-size: 29px;
+	color: #662D91;
+	
+}
+.titbread a{
+	font-size: 13px;
+	color: #999999;
+	
+}
+
+.lincdiffwrap{
+	text-align: right;
+	margin-right: 5px;
+}
+
+
+
+.difftblwrap{
+	max-width: 100%;
+	overflow: auto;	
+}
+
+.difftbl{
+	margin-top: 60px;
+	font-family: UbuntuM;
+	font-size: 16px;
+}
+
+
+.diffpic{
+	max-width: 180px;
+}
+
+.difftr{
+	border-top: 1px solid;	
+}
+
+.difftr:first-child{
+	border-top: none;	
+	padding-top: 0px;
+}
+
+.difftd{
+	max-width: 220px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-left: 1px solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.difftd:first-child{
+	border-left: none;
+}
+
+
+
+.difftitle{
+	font-size: 22px;
+	font-family: UbuntuM;
+}
+
+.diffbtnorder{
+	
 }

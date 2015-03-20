@@ -30,14 +30,19 @@ class GoodsController extends Controller
      * Lists all Goods models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($idcat)
     {
+
         $searchModel = new Goodssearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $model=Goods::find()->where(['idcat' => $idcat])->all();
+        $catname=Goods::getCatnamebyid($idcat);
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'model' => $model,
+            'idcat' => $idcat,
+            'catname' => $catname,
         ]);
     }
 
@@ -117,5 +122,31 @@ class GoodsController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionAddtodiff($userid)
+    {
+
+       $b= Yii::$app->session->get('goodsForDiff');
+       if (!in_array($userid, $b)){
+           $b[] = $userid;
+           Yii::$app->session->set('goodsForDiff', $b);
+       }    
+       $success=true;
+       return "Добавлено для сравнения";
+      
+    }
+
+    public function actionDiff()
+    {
+        $searchModel = new Goodssearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $gfd= Yii::$app->session->get('goodsForDiff');
+        $model=Goods::find()->where(['id' => $gfd])->all();
+        return $this->render('diff', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'model' => $model,
+        ]);
     }
 }
