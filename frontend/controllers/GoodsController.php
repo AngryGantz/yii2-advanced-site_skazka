@@ -53,8 +53,11 @@ class GoodsController extends Controller
      */
     public function actionView($id)
     {
+        $model = $this->findModel($id);
+        $catname=Goods::getCatnamebyid($model->idcat);    
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
+            'catname' => $catname,
         ]);
     }
 

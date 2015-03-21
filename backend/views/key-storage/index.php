@@ -11,6 +11,9 @@ $this->title = Yii::t('backend', 'Key Storage Items');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="key-storage-item-index">
+    <div class="alert alert-danger">
+        <strong>Внимание! Только для разработчиков! </strong>
+    </div>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 

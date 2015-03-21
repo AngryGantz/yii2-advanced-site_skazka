@@ -1,5 +1,4 @@
 <?php
-
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\web\Session;
@@ -7,13 +6,11 @@ use yii\bootstrap\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\Goodssearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
 $this->title = $catname;
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goods-index">
-<!--         <h1><?= Html::encode($this->title) ?></h1>  -->
-
+<!--<h1><?= Html::encode($this->title) ?></h1>  -->
     <!-- begin row (full wrap for 2-col content  -->
     <div class="row">
         <!-- Левый сайдбар -->    
@@ -23,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- begin col-lg-8  -->
         <!-- Основной контент -->
         <div class="col-lg-9">
-            <span class="titbread"> 
+            <p class="titbread"> 
             <?php
                if ($idcat==1) echo '
                     ПРУЖИННЫЕ БОНЕЛЬ /
@@ -40,23 +37,19 @@ $this->params['breadcrumbs'][] = $this->title;
                 $cats = array(4, 5, 6, 7,8,9,10);
                 if (in_array($idcat, $cats)) echo $catname;
              ?>   
-            </span>
-            <?php 
-                   
-             ?>            
-            <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
+            </p>
             <?php 
                 if ($idcat==1) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
                 if ($idcat==2) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
                 if ($idcat==3) echo $this->render('//goods/_listcards', ['grp1' => $model,]); 
+                if ($idcat==4) echo $this->render('//goods/_listtoplers', ['grp1' => $model,]); 
+                if ($idcat==5) echo $this->render('//goods/_listchild', ['grp1' => $model,]); 
+                $cats = array(6,7,8,9,10);
+                if (in_array($idcat, $cats)) echo $this->render('//goods/_listother', ['grp1' => $model,]); 
+
             ?>
         </div>
         <!-- end col-lg-8 -->
     </div>
     <!-- end row (full wrap for 2-col content -->
-
-
-
-
 </div>

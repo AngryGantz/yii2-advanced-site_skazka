@@ -7,21 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\GoodsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('backend', 'Goods');
+$this->title = Yii::t('common', 'Goods');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goods-index">
 
-<!--     <h1><?= Html::encode($this->title) ?></h1> -->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(
-            Yii::t('backend', 'Create {modelClass}', ['modelClass' => 'Goods']),
-            ['create'],
-            ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('common', 'Create Goods'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -44,6 +39,27 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'sostav',
             // 'material',
             // 'pic',
+            // 'note1:ntext',
+            // 'note2:ntext',
+            // 'pic2',
+            // 'bl1:ntext',
+            // 'bl1pic',
+            // 'bl2:ntext',
+            // 'bl2pic',
+            // 'bl3:ntext',
+            // 'bl3pic',
+            // 'bl4:ntext',
+            // 'bl4pic',
+            // 'bl5:ntext',
+            // 'bl5pic',
+            // 'bl6:ntext',
+            // 'bl6pic',
+            // 'bl7:ntext',
+            // 'bl7pic',
+            // 'bl8:ntext',
+            // 'bl8pic',
+            // 'bl9:ntext',
+            // 'bl9pic',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

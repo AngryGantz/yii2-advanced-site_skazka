@@ -12,6 +12,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="widget-menu-index">
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <div class="alert alert-danger">
+        <strong>Внимание! Только для разработчиков! </strong>
+    </div>
 
     <p>
         <?= Html::a(Yii::t('backend', 'Create {modelClass}', [

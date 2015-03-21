@@ -11,6 +11,9 @@ $this->title = Yii::t('backend', 'Widget Carousels');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="widget-carousel-index">
+    <div class="alert alert-danger">
+        <strong>Внимание! Только для разработчиков! </strong>
+    </div>
 
     <p>
         <?= Html::a(Yii::t('backend', 'Create {modelClass}', [

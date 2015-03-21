@@ -37,7 +37,8 @@ require "admin/connect.php";
 		<li><a href="<?php echo \Yii::$app->urlManager->createUrl(['/site/contact']);  ?>" title="">Контакты</a></li>
 	</ul>
 	<img class="points" src="/img/points.png" alt="">
-	<div class="leftcall">
+	<a class="callorder" data-articul="" href="callorder" title=""><img  src="/img/topcall.png" alt=""></a>
+<!-- 	<div class="leftcall">
 		<a name="order"></a>
 		<p class="titl">Заказать звонок</p>
 		<p class="desc">Наши специалисты помогут вам с выбором</p>
@@ -48,7 +49,7 @@ require "admin/connect.php";
 				<input id="text_comment" type="hidden" name="id" value="Общий заказ">
 			</div>
 	</div>
-	<!-- <div class="leftplacehold"></div> -->
+ -->	<!-- <div class="leftplacehold"></div> -->
 
 </div>
 <!-- end leftwrap -->

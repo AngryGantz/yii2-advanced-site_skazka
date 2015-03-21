@@ -156,8 +156,8 @@ use yii\widgets\Breadcrumbs;
                             ['label'=>Yii::t('backend', 'Goods Categories'), 'url'=>['/goodscat/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Goods'), 'url'=>['/goods/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Static pages'), 'url'=>['/page/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                            ['label'=>Yii::t('backend', 'Articles'), 'url'=>['/article/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                            ['label'=>Yii::t('backend', 'Article Categories'), 'url'=>['/article-category/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
+                            // ['label'=>Yii::t('backend', 'Articles'), 'url'=>['/article/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
+                            // ['label'=>Yii::t('backend', 'Article Categories'), 'url'=>['/article-category/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Text Widgets'), 'url'=>['/widget-text/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Menu Widgets'), 'url'=>['/widget-menu/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Carousel Widgets'), 'url'=>['/widget-carousel/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
@@ -174,19 +174,19 @@ use yii\widgets\Breadcrumbs;
                         'icon'=>'<i class="fa fa-cogs"></i>',
                         'options'=>['class'=>'treeview'],
                         'items'=>[
-                            [
-                                'label'=>Yii::t('backend', 'i18n'),
-                                'icon'=>'<i class="fa fa-flag"></i>',
-                                'options'=>['class'=>'treeview'],
-                                'items'=>[
-                                    ['label'=>Yii::t('backend', 'i18n Source Message'), 'url'=>['/i18n/i18n-source-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                                    ['label'=>Yii::t('backend', 'i18n Message'), 'url'=>['/i18n/i18n-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                                ]
-                            ],
+                            // [
+                            //     'label'=>Yii::t('backend', 'i18n'),
+                            //     'icon'=>'<i class="fa fa-flag"></i>',
+                            //     'options'=>['class'=>'treeview'],
+                            //     'items'=>[
+                            //         ['label'=>Yii::t('backend', 'i18n Source Message'), 'url'=>['/i18n/i18n-source-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
+                            //         ['label'=>Yii::t('backend', 'i18n Message'), 'url'=>['/i18n/i18n-message/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
+                            //     ]
+                            // ],
                             ['label'=>Yii::t('backend', 'Key-Value Storage'), 'url'=>['/key-storage/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'Cache'), 'url'=>['/cache/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             ['label'=>Yii::t('backend', 'File Storage Items'), 'url'=>['/file-storage/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
-                            ['label'=>Yii::t('backend', 'File Manager'), 'url'=>['/file-manager/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
+                            // ['label'=>Yii::t('backend', 'File Manager'), 'url'=>['/file-manager/index'], 'icon'=>'<i class="fa fa-angle-double-right"></i>'],
                             [
                                 'label'=>Yii::t('backend', 'System Events'),
                                 'url'=>['/system-event/index'],

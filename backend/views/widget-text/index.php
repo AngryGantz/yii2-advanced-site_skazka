@@ -12,6 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="text-block-index">
 
+
+    <div class="alert alert-danger">
+        <strong>Внимание! Только для разработчиков! </strong>
+    </div>
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>

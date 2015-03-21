@@ -9,6 +9,9 @@ $icons = [
     'user'=>'<i class="fa fa-user bg-blue"></i>'
 ];
 ?>
+
+<div class="alert alert-info">Хроника доступна только в режиме отладки</div>
+
 <?php \yii\widgets\Pjax::begin() ?>
 <div class="row">
     <div class="col-md-12">

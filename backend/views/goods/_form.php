@@ -20,24 +20,26 @@ use yii\widgets\ActiveForm;
             'name'
         ), ['prompt'=>'']) ?>
 
-
     <?= $form->field($model, 'name')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'height')->textInput() ?>
+<table class="">
+    <tr>
+        <td><?= $form->field($model, 'height')->textInput(['maxlength' => 255]) ?></td>
+        <td><?= $form->field($model, 'hard')->textInput() ?></td>
+        <td><?= $form->field($model, 'gload')->textInput() ?></td>
+    </tr>
+</table>
 
-    <?= $form->field($model, 'hard')->textInput() ?>
-
-    <?= $form->field($model, 'gload')->textInput() ?>
-
-    <?= $form->field($model, 'cost1')->textInput() ?><?= $form->field($model, 'cost2')->textInput() ?>
-
-    <?= $form->field($model, 'cost3')->textInput() ?>
-
-    <?= $form->field($model, 'cost4')->textInput() ?>
-
-    <?= $form->field($model, 'cost5')->textInput() ?>
-
-    <?= $form->field($model, 'cost6')->textInput() ?>
+<table class="cost">
+        <tr>
+            <td><?= $form->field($model, 'cost1')->textInput() ?></td>
+            <td><?= $form->field($model, 'cost2')->textInput() ?></td>
+            <td><?= $form->field($model, 'cost3')->textInput() ?></td>
+            <td><?= $form->field($model, 'cost4')->textInput() ?></td>
+            <td><?= $form->field($model, 'cost5')->textInput() ?></td>
+            <td><?= $form->field($model, 'cost6')->textInput() ?></td>
+        </tr>
+</table>    
 
     <?= $form->field($model, 'sostav')->textInput(['maxlength' => 255]) ?>
 
@@ -50,12 +52,120 @@ use yii\widgets\ActiveForm;
             ]        
     ]) ?>
 
+    <?= $form->field($model, 'note1')->textarea(['rows' => 6]) ?>
 
+    <?= $form->field($model, 'note2')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'pic2')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+
+
+<table class="blk">
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl1pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl1')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl2pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl2')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl3pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl3')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl4pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl4')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl5pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl5')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl6pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl6')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl7pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl7')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl8pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl8')->textarea(['rows' => 6]) ?></td>
+    </tr>
+    <tr class="blktr">
+        <td class="blktd">    <?= $form->field($model, 'bl9pic')->widget(\trntv\filekit\widget\SingleFileUpload::classname(), [
+       'url'=>['/file-storage/upload'],
+       'fileuploadOptions'=>[
+                'maxFileSize'=>2000000 // 0.2 MiB
+            ]        
+    ]) ?>
+
+</td>
+        <td class="blktd">    <?= $form->field($model, 'bl9')->textarea(['rows' => 6]) ?></td>
+    </tr>
+</table>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? Yii::t('common', 'Create') : Yii::t('common', 'Update'), ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
 
 </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

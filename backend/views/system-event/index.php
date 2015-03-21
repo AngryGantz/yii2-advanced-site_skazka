@@ -11,6 +11,9 @@ $this->title = Yii::t('backend', 'System Events');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="system-event-index">
+    <div class="alert alert-info">
+        <strong>Активно только в режиме отладки</strong>
+    </div>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

@@ -7,16 +7,25 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\GoodcatSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Goodscats';
+$this->title = 'Категории товаров';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goodscat-index">
+    
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="alert alert-danger">
+        <strong>Внимание! Только для разработчиков! </strong>Предопределенные 10 категорий привязаны к логике проекта.
+        Если вы добавите новую категорию. она нигде не проявится. Если вы удалите одну из предопределенных категорий,
+        вы сломаете структуру сайта и получите ошибки выполнения на ряде страниц. Вы должны очень хорошо понимать,
+        что вы делаете, изменяя или удаляя предопределенные категории.
+    
+
+    </div>
+    
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Goodscat', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать категорию', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

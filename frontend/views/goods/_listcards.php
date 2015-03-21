@@ -11,7 +11,8 @@ foreach ($grp1 as $item => $value) {
             <?php echo $value->name; ?>
         </h1>
 
-        <img class="pic" src="<?php echo $value->pic; ?>" alt="">
+        <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/view', 'id' => $value->id]);  ?>" 
+            title=""><img class="pic" src="<?php echo $value->pic; ?>" alt=""></a>
         <!-- begin lblblock1  -->
         <div class="lblblock1">
             <div class="titlbl">Высота</div>

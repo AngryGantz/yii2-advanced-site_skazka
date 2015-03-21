@@ -45,9 +45,51 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'pic') ?>
 
+    <?php // echo $form->field($model, 'note1') ?>
+
+    <?php // echo $form->field($model, 'note2') ?>
+
+    <?php // echo $form->field($model, 'pic2') ?>
+
+    <?php // echo $form->field($model, 'bl1') ?>
+
+    <?php // echo $form->field($model, 'bl1pic') ?>
+
+    <?php // echo $form->field($model, 'bl2') ?>
+
+    <?php // echo $form->field($model, 'bl2pic') ?>
+
+    <?php // echo $form->field($model, 'bl3') ?>
+
+    <?php // echo $form->field($model, 'bl3pic') ?>
+
+    <?php // echo $form->field($model, 'bl4') ?>
+
+    <?php // echo $form->field($model, 'bl4pic') ?>
+
+    <?php // echo $form->field($model, 'bl5') ?>
+
+    <?php // echo $form->field($model, 'bl5pic') ?>
+
+    <?php // echo $form->field($model, 'bl6') ?>
+
+    <?php // echo $form->field($model, 'bl6pic') ?>
+
+    <?php // echo $form->field($model, 'bl7') ?>
+
+    <?php // echo $form->field($model, 'bl7pic') ?>
+
+    <?php // echo $form->field($model, 'bl8') ?>
+
+    <?php // echo $form->field($model, 'bl8pic') ?>
+
+    <?php // echo $form->field($model, 'bl9') ?>
+
+    <?php // echo $form->field($model, 'bl9pic') ?>
+
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>
+        <?= Html::submitButton(Yii::t('common', 'Search'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton(Yii::t('common', 'Reset'), ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

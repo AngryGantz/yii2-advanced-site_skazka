@@ -21,6 +21,15 @@
 		max-width: 277px;
 		text-align: center;
 	}
+		
+	.gbox .lblblock1 p{
+			text-align: left;
+	}
+
+		.gbox .lblblock1 .titblue {
+			color: #1c7ae3;
+
+		}
 
 		.gbox .lblblock1 .titlbl{
 			float: left;
@@ -174,3 +183,35 @@
 .diffbtnorder{
 	
 }
+
+.viewpic{
+	max-width: 740px;
+}
+
+
+.viewtbl1{
+	font-size: 14px;
+	font-family: UbuntuR;
+}
+
+.viewtr1{
+	
+}
+
+	.viewtd1{
+		vertical-align: top;		
+		padding-top: 10px;
+		padding-left: 20px;
+	}	
+
+		.viewtd1 img{
+			width: 50px;
+		}
+
+	.viewpic2{
+		max-width: 320px;
+	}
+
+	.viewbtn{
+		/*float: right;*/
+	}

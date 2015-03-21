@@ -7,45 +7,66 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Goods */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Goods', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $catname, 'url' => ['/goods/index', 'idcat'=>$model->idcat]];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goods-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
-
-
-
-    <?= DetailView::widget([
-        'model' => $model,
-        'attributes' => [
-            'id',
-            'idcat',
-            'name',
-            'height',
-            'hard',
-            'gload',
-            'cost1',
-            'cost2',
-            'cost3',
-            'cost4',
-            'cost5',
-            'cost6',
-            'sostav',
-            'material',
-            'pic',
-        ],
-    ]) ?>
+    <div class="row">
+        <div class="col-lg-8">
+            <img src="<?= $model->pic ?>" class="viewpic">
+            <table class="viewtbl1">
+                <tr class="viewtr1">
+                    <td class="viewtd1"><img src="<?= $model->bl1pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl1 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl2pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl2 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl3pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl3 ?></td>
+                </tr>
+                <tr class="viewtr1">
+                    <td class="viewtd1"><img src="<?= $model->bl4pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl4 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl5pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl5 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl6pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl6 ?></td>
+                </tr>
+                <tr class="viewtr1">
+                    <td class="viewtd1"><img src="<?= $model->bl7pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl7 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl8pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl8 ?></td>
+                    <td class="viewtd1"><img src="<?= $model->bl9pic ?>" alt=""></td>
+                    <td class="viewtd1"><?= $model->bl9 ?></td>
+                </tr>
+            </table>
+        </div>    
+        <div class="col-lg-4">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <?php $idcat=$model->idcat; 
+                if ($idcat==1) echo $this->render('//goods/_card', ['value' => $model,]); 
+                if ($idcat==2) echo $this->render('//goods/_card', ['value' => $model,]); 
+                if ($idcat==3) echo $this->render('//goods/_card', ['value' => $model,]); 
+                if ($idcat==4) echo $this->render('//goods/_topler', ['value' => $model,]); 
+                if ($idcat==5) echo $this->render('//goods/_child', ['value' => $model,]); 
+                $cats = array(6,7,8,9,10);
+                if (in_array($idcat, $cats)) echo $this->render('//goods/_other', ['value' => $model,]); 
+            ?>   
+            <div class="clear"></div>
+            <p>&nbsp;</p>
+            <p><?= $model->note1 ?></p>    
+            <p>&nbsp;</p>
+            <img src="<?= $model->pic2 ?>" class="viewpic2">
+            <p>&nbsp;</p>
+            <p><?= $model->note2 ?></p>    
+            <p>&nbsp;</p>
+            <?php echo '<td class="difftd"><button class="callorder viewbtn btn btn-danger btn-lg" data-articul="'.$model->name.'">Заказать</button></td>'; ?>
+            <div class="clear"></div>
+        </div>    
+    </div>
 
 </div>
