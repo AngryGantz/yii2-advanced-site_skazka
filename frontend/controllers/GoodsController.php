@@ -131,10 +131,15 @@ class GoodsController extends Controller
     {
 
        $b= Yii::$app->session->get('goodsForDiff');
-       if (!in_array($userid, $b)){
-           $b[] = $userid;
-           Yii::$app->session->set('goodsForDiff', $b);
-       }    
+       if (count($b)>0) {
+           if (!in_array($userid, $b)){
+               $b[] = $userid;
+               Yii::$app->session->set('goodsForDiff', $b);
+           }    
+       } else {
+               $b[] = $userid;
+               Yii::$app->session->set('goodsForDiff', $b);
+       }  
        $success=true;
        return "Добавлено для сравнения";
       
