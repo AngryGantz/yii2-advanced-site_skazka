@@ -30,12 +30,12 @@ class GoodsController extends Controller
      * Lists all Goods models.
      * @return mixed
      */
-    public function actionIndex($idcat)
+    public function actionIndex($idcat, $sort='cost1')
     {
 
         $searchModel = new Goodssearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $model=Goods::find()->where(['idcat' => $idcat])->all();
+        $model=Goods::find()->where(['idcat' => $idcat])->orderBy($sort)->all();
         $catname=Goods::getCatnamebyid($idcat);
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -43,6 +43,7 @@ class GoodsController extends Controller
             'model' => $model,
             'idcat' => $idcat,
             'catname' => $catname,
+            'sort'=>$sort,
         ]);
     }
 

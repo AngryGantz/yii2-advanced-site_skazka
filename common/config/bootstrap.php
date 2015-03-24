@@ -8,7 +8,11 @@ Yii::setAlias('@console',   realpath(__DIR__.'/../../console'));
 Yii::setAlias('@storage',   realpath(__DIR__.'/../../storage'));
 Yii::setAlias('@tests',     realpath(__DIR__.'/../../tests'));
 
+Yii::setAlias('@webroot',     realpath(__DIR__.'/../../frontend/web'));
+
 // Url Aliases
 Yii::setAlias('@frontendUrl', getenv('FRONTEND_URL'));
 Yii::setAlias('@backendUrl', getenv('BACKEND_URL'));
 Yii::setAlias('@storageUrl', getenv('STORAGE_URL'));
+
+Yii::setAlias('@web', getenv('FRONTEND_URL'));

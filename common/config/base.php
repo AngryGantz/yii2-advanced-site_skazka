@@ -5,7 +5,7 @@ $config = [
     'extensions' => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'sourceLanguage'=>'ru',
     'language'=>'ru',
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log', 'thumbnail'],
     'components' => [
 
         'authManager' => [

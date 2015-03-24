@@ -1,6 +1,7 @@
 <?php
  use yii\bootstrap\ActiveForm;
  use yii\helpers\Html;
+ use himiklab\thumbnail\EasyThumbnailImage;
 
 foreach ($grp1 as $item => $value) {
 ?>
@@ -11,8 +12,19 @@ foreach ($grp1 as $item => $value) {
             <?php echo $value->name; ?>
         </h1>
 
-        <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/view', 'id' => $value->id]);  ?>" 
-            title=""><img class="pic" src="<?php echo $value->pic; ?>" alt=""></a>
+        <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/view', 'id' => $value->id]);  ?>" title="">
+            <?php 
+                $urlarray=parse_url($value->pic);
+                $fp=Yii::getAlias('@storage' . $urlarray['path']);
+                echo EasyThumbnailImage::thumbnailImg(
+                    $fp,
+                    277,
+                    200,
+                    EasyThumbnailImage::THUMBNAIL_OUTBOUND,
+                    ['alt' => $value->pic]
+                );
+            ?>
+        </a>
         <!-- begin lblblock1  -->
         <div class="lblblock1">
             <div class="titlbl">Высота</div>
