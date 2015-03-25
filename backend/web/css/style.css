@@ -21,3 +21,7 @@ body .user-panel > .info {
 .blk{
 	width: 600px;
 }
+
+.blktd{
+	vertical-align: top;
+}
