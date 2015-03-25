@@ -4,7 +4,7 @@
         <!-- begin lblblock1  -->
         <div class="lblblock1">
            <p> <span class="titblue">Материал: &nbsp;</span>
-            <span><?php echo $value->mateial; ?></span></p>
+            <span><?php echo $value->material; ?></span></p>
         </div>
         <!-- end lblblock1 -->
         <div class="clear"></div>
