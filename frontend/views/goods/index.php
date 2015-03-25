@@ -12,7 +12,7 @@ $this->title = $catname;
 if ($sort=='cost1') $msgbtn='цене';
 if ($sort=='hard') $msgbtn='жесткости';
 ?>
-<!-- Кнопка определения типа сортировки -->
+<!-- Кнопка определения типа сортировки. По умолчанию по цене -->
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Сортировка по <?php echo $msgbtn ?> <span class="caret"></span></button>
   <ul class="dropdown-menu" role="menu">

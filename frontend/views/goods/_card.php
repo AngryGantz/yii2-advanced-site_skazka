@@ -19,13 +19,15 @@
         <button type="button" 
             id="btn<?php echo $value->id; ?>"
             class="form-control btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown">
-            160x180<span class="caret"></span>
+            80x200<span class="caret"></span>
         </button>
         <ul class="dropdown-menu " id="drpdwn<?php echo $value->id; ?>"  role="menu">
-            <li class="ddmm">160x180 <span class="hidn cst2" data-cost="<?php echo $value->cost1; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
-            <li class="ddmm">180x220 <span class="hidn cst2" data-cost="<?php echo $value->cost2; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
-            <li class="ddmm">200x240<span class="hidn cst2" data-cost="<?php echo $value->cost3;  ?>" data-idn="<?php echo $value->id; ?>" ></span> </li>
-            <li class="ddmm">220x260<span class="hidn cst2" data-cost="<?php echo $value->cost4; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
+            <li class="ddmm">80x200 <span class="hidn cst2" data-cost="<?php echo $value->cost1; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
+            <li class="ddmm">90x200 <span class="hidn cst2" data-cost="<?php echo $value->cost2; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
+            <li class="ddmm">120x200<span class="hidn cst2" data-cost="<?php echo $value->cost3;  ?>" data-idn="<?php echo $value->id; ?>" ></span> </li>
+            <li class="ddmm">140x200<span class="hidn cst2" data-cost="<?php echo $value->cost4; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>
+            <li class="ddmm">160x200<span class="hidn cst2" data-cost="<?php echo $value->cost5; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>            
+            <li class="ddmm">180x200<span class="hidn cst2" data-cost="<?php echo $value->cost6; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>            
         </ul>
     </div>
        &nbsp;&nbsp;&nbsp;&nbsp; <span id="cst<?php echo $value->id; ?>"><?php echo $value->cost1; ?></span>тг.
