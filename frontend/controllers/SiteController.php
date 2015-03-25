@@ -39,10 +39,12 @@ class SiteController extends Controller
         $l=3;
         $grp1=Goods::find()->where(['idcat' => 1])->limit($l)->all();
         $grp2=Goods::find()->where(['idcat' => 2])->limit($l)->all();
+        $grp3=Goods::find()->where(['idcat' => 3])->limit($l)->all();
         return $this->render('index', 
             [
                 'grp1'=>$grp1,
-                'grp2'=>$grp2
+                'grp2'=>$grp2,
+                'grp3'=>$grp3,
             ]);
     }
 

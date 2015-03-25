@@ -12,9 +12,10 @@ $this->title = Yii::$app->name;?>
     'index'
         ]) ?>
 </div>
+<?php echo $this->render('//layouts/_btnmenu'); ?>
 <div class="container">
 <!-- <a class="btn btn-lg btn-success callorder" data-userid="22" >Change password</a> -->
-    <?php echo $this->render('//layouts/_btnmenu'); ?>
+    
     <div class="site-index">
         <!-- begin row (full wrap for 2-col content  -->
         <div class="row">

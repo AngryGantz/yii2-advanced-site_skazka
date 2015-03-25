@@ -11,6 +11,12 @@ $this->title = $catname;
 
 if ($sort=='cost1') $msgbtn='цене';
 if ($sort=='hard') $msgbtn='жесткости';
+if ($sort=='gload') $msgbtn='нагрузке';
+if ($sort=='height') $msgbtn='высоте';
+
+if (in_array($idcat , [1,2,3])) {
+    
+
 ?>
 <!-- Кнопка определения типа сортировки. По умолчанию по цене -->
 <div class="btn-group">
@@ -18,10 +24,13 @@ if ($sort=='hard') $msgbtn='жесткости';
   <ul class="dropdown-menu" role="menu">
     <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => $idcat , 'sort' => 'cost1']);  ?>">Сортировка по цене</a></li>    
     <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => $idcat, 'sort' => 'hard']);  ?>">Сортировка по жесткости</a></li>
+    <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => $idcat, 'sort' => 'gload']);  ?>">Сортировка по нагрузке</a></li>
+    <li><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => $idcat, 'sort' => 'height']);  ?>">Сортировка по высоте</a></li>    
   </ul>
 </div>
+<p>&nbsp;</p>
 <?php
-
+}
 
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -37,6 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <!-- Основной контент -->
         <div class="col-lg-9">
             <p class="titbread"> 
+            <img src="<?php echo  Yii::getAlias('@web').'/img/arrow1.png' ?>" alt="">
             <?php
                if ($idcat==1) echo '
                     ПРУЖИННЫЕ БОНЕЛЬ /

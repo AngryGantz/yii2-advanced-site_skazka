@@ -5,9 +5,52 @@
 
 
 .leftmnuul{
-	margin-top: 50px;
+	margin-top: 0px;
 	padding-left: 0;
 }
+
+
+
+.leftlimnumatras{
+	color: #FFF;	
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	height: 100px;
+	background-color: #1c7ae3;
+	font-family: UbuntuL;
+	font-size: 18px;
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+	.leftlimnumatrasli a{
+		font-family: UbuntuL;
+		font-size: 14px;
+		color: #FFF;	
+		padding-left: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		text-decoration: none;
+		display: block;
+	}
+	.leftlimnumatrasli a:hover{
+		font-family: UbuntuL;
+		font-size: 14px;
+		color: #FFF;	
+		padding-left: 5px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		text-decoration: none;
+		display: block;
+		background-color: #662d91;
+	}
+
+
 
 .leftlimnu {
 	width: 200px;
@@ -19,12 +62,11 @@
 	display: inline-block;
 	margin-bottom: 3px;
 }
-
 .leftlimnu a{
 	color: #FFF;	
 	padding-left: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	text-decoration: none;
 	display: block;
 }
@@ -32,12 +74,17 @@
 .leftlimnu a:hover{
 	color: #FFF;	
 	padding-left: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 	text-decoration: none;
 	display: block;
-	background-color: #C1272D;
+	background-color: #662d91;
 }
+
+
+.liactive{
+	background-color: #662d91;
+}	
 
 .leftcall{
 	font-family: UbuntuR;	

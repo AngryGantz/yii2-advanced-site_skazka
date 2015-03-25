@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="goods-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    
 
     <div class="row">
         <div class="col-lg-8">
@@ -45,27 +45,31 @@ $this->params['breadcrumbs'][] = $this->title;
             </table>
         </div>    
         <div class="col-lg-4">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <?php $idcat=$model->idcat; 
-                if ($idcat==1) echo $this->render('//goods/_card', ['value' => $model,]); 
-                if ($idcat==2) echo $this->render('//goods/_card', ['value' => $model,]); 
-                if ($idcat==3) echo $this->render('//goods/_card', ['value' => $model,]); 
-                if ($idcat==4) echo $this->render('//goods/_topler', ['value' => $model,]); 
-                if ($idcat==5) echo $this->render('//goods/_child', ['value' => $model,]); 
-                $cats = array(6,7,8,9,10);
-                if (in_array($idcat, $cats)) echo $this->render('//goods/_other', ['value' => $model,]); 
-            ?>   
-            <div class="clear"></div>
-            <p>&nbsp;</p>
-            <p><?= $model->note1 ?></p>    
-            <p>&nbsp;</p>
-            <img src="<?= $model->pic2 ?>" class="viewpic2">
-            <p>&nbsp;</p>
-            <p><?= $model->note2 ?></p>    
-            <p>&nbsp;</p>
-            <?php echo '<td class="difftd"><button class="callorder viewbtn btn btn-danger btn-lg" data-articul="'.$model->name.'">Заказать</button></td>'; ?>
-            <div class="clear"></div>
+            <div class="rcol">
+
+                <h1><?= Html::encode($this->title) ?></h1>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <?php $idcat=$model->idcat; 
+                        if ($idcat==1) echo $this->render('//goods/_card', ['value' => $model,]); 
+                        if ($idcat==2) echo $this->render('//goods/_card', ['value' => $model,]); 
+                        if ($idcat==3) echo $this->render('//goods/_card', ['value' => $model,]); 
+                        if ($idcat==4) echo $this->render('//goods/_topler', ['value' => $model,]); 
+                        if ($idcat==5) echo $this->render('//goods/_child', ['value' => $model,]); 
+                        $cats = array(6,7,8,9,10);
+                        if (in_array($idcat, $cats)) echo $this->render('//goods/_other', ['value' => $model,]); 
+                    ?>   
+                    <div class="clear"></div>
+                    <p>&nbsp;</p>
+                    <p><?= $model->note1 ?></p>    
+                    <p>&nbsp;</p>
+                    <img src="<?= $model->pic2 ?>" class="viewpic2">
+                    <p>&nbsp;</p>
+                    <p><?= $model->note2 ?></p>    
+                    <p>&nbsp;</p>
+                    <?php echo '<td class="difftd"><button class="callorder viewbtn btn btn-danger btn-lg" data-articul="'.$model->name.'">Заказать</button></td>'; ?>
+                    <div class="clear"></div>
+            </div>>                    
         </div>    
     </div>
 

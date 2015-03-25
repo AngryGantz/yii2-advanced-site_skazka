@@ -1,20 +1,9 @@
-        <p>&nbsp;</p>
-
-        <div class="panel panel-primary panel-index">
-              <div class="panel-heading"><h3>Пружинные Бонель</h3></div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div>
-        </div>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp1,]); ?>
         <p>&nbsp;</p>
-        <div class="panel panel-primary panel-index">
-              <div class="panel-heading"><h3>Независимые пружины</h3></div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              </div>
-        </div>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp2,]); ?>        
+        <p>&nbsp;</p>
+        <?php echo $this->render('//goods/_listcards', ['grp1' => $grp3,]); ?>        
+ 
         <div class="jumbotron">
         <p>&nbsp;</p>
         <p>&nbsp;</p>

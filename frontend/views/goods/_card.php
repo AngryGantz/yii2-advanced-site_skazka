@@ -18,7 +18,7 @@
     <div class="btn-group">
         <button type="button" 
             id="btn<?php echo $value->id; ?>"
-            class="form-control btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown">
+            class="form-control btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
             80x200<span class="caret"></span>
         </button>
         <ul class="dropdown-menu " id="drpdwn<?php echo $value->id; ?>"  role="menu">

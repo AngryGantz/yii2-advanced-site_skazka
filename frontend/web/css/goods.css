@@ -76,6 +76,7 @@
 		color: #fff;
 		padding-top: 2px;
 		padding-left: 15px;
+		line-height: 30px;
 		
 	}
 
@@ -215,3 +216,7 @@
 	.viewbtn{
 		/*float: right;*/
 	}
+
+.rcol{
+	max-width: 283px;
+}
