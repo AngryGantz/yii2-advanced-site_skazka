@@ -8,12 +8,12 @@ use common\models\Goods;
 /* @var $model \frontend\models\ContactForm */
 
 ?>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<?php echo $this->render('//layouts/_btnmenu'); ?>
 
 <div class="container">
 <!-- <a class="btn btn-lg btn-success callorder" data-userid="22" >Change password</a> -->
-
-    <?php echo $this->render('//layouts/_btnmenu'); ?>
-
     <div class="site-index">
         <!-- begin row (full wrap for 2-col content  -->
         <div class="row">

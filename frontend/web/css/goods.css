@@ -67,7 +67,7 @@
 		}
 
 	.gbox .lblblock2{
-		margin-top: 15px;
+		margin-top: 5px;
 		font-family: UbuntuR;
 		font-size: 16px;
 		height: 37px;
@@ -97,22 +97,24 @@
 	
 	display: table-cell;
 	vertical-align: middle;
-	height:350px;
-	width: 190px;
-	margin-top: 66px;
-	background: url("../img/strelka116-250.png");
+	height:250px;
+	width: 45px;
+	margin-top: 266px;
+	background: url("../img/arrow2.png");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	cursor: pointer;
+	
 }
 
-.arrow:hover{
+/*.arrow:hover{
 	margin-top: 66px;
 	background: url("../img/strelka119-250.png");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	
 }
+*/
 .panel-index{
 	margin-bottom: 0;
 }
@@ -142,7 +144,7 @@
 }
 
 .difftbl{
-	margin-top: 60px;
+	margin-top: 10px;
 	font-family: UbuntuM;
 	font-size: 16px;
 }
@@ -219,4 +221,8 @@
 
 .rcol{
 	max-width: 283px;
+}
+
+#cst {
+	display: inline-block;
 }

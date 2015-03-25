@@ -4,7 +4,7 @@
 	<div class="cloud">
 		<div class="topbg">
 			<div class="logo">
-				<img  src="/img/logo.png" alt="">
+				<a href="/" title=""><img  src="/img/logo.png" alt=""></a>
 			</div>
 			<div class="topcall">
 				<a class="callorder" data-articul="" href="callorder" title=""><img  src="/img/topcall.png" alt=""></a>

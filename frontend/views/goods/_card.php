@@ -30,7 +30,7 @@
             <li class="ddmm">180x200<span class="hidn cst2" data-cost="<?php echo $value->cost6; ?>" data-idn="<?php echo $value->id; ?>" ></span></li>            
         </ul>
     </div>
-       &nbsp;&nbsp;&nbsp;&nbsp; <span id="cst<?php echo $value->id; ?>"><?php echo $value->cost1; ?></span>тг.
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="cst<?php echo $value->id; ?>"><?php echo $value->cost1; ?></span>тг.
     </div>
     <!-- end lblblock2 -->
     <div class="lincdiffwrap">

@@ -17,11 +17,14 @@ require "admin/connect.php";
 	
 	<ul class="leftmnuul">
 		<div class="leftlimnumatras">
-			Матрасы
-			<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==1)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '1']);  ?>" title="">Пружинные бонель</a></li>	
-			<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==2)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title="">Независимые пружины</a></li>	
-			<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==3)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '3']);  ?>" title="">Латексные и беспружинные</a></li>	
+			<a data-toggle="collapse" data-target="#dmleft" title="">Матрасы</a>  
 		</div>
+			<div id="dmleft"  class="collapse <?php if (isset($idcat) and (in_array($idcat, [1,2,3]))) echo 'in';?>">
+				<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==1)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '1']);  ?>" title="">Пружинные бонель</a></li>	
+				<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==2)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title="">Независимые пружины</a></li>	
+				<li class="leftlimnumatrasli <?php if (isset($idcat) and ($idcat==3)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '3']);  ?>" title="">Латексные и беспружинные</a></li>	
+			</div>
+		
 		<!-- <li class="leftlimnu"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '1']);  ?>" title="">Матрасы</a></li> -->
 
 		<li class="leftlimnu <?php if (isset($idcat) and ($idcat==4)) echo 'liactive';?>"><a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '4']);  ?>" title="">Топлеры</a></li>

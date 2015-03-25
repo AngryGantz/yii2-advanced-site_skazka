@@ -62,7 +62,7 @@ foreach ($grp1 as $item => $value) {
 
             </ul>
         </div>
-           &nbsp;&nbsp;&nbsp;&nbsp; <span id="cst<?php echo $value->id; ?>"><?php echo $value->cost1; ?></span>тг.
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="cst<?php echo $value->id; ?>"><?php echo $value->cost1; ?></span>тг.
         </div>
         <!-- end lblblock2 -->
         <div class="lincdiffwrap">
@@ -77,5 +77,5 @@ foreach ($grp1 as $item => $value) {
     <!-- end gbox -->
     <?php
 }?>
-<!-- <div class=" arrow"></div>                 -->
-<div class="clear"></div>
+
+<!-- <div class="clear"></div> -->

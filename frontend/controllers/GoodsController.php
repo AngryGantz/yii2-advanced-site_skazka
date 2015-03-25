@@ -14,6 +14,9 @@ use yii\filters\VerbFilter;
  */
 class GoodsController extends Controller
 {
+
+    public $layout = 'main';
+
     public function behaviors()
     {
         return [
@@ -148,6 +151,7 @@ class GoodsController extends Controller
 
     public function actionDiff()
     {
+        $this->layout = 'home';
         $searchModel = new Goodssearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $gfd= Yii::$app->session->get('goodsForDiff');

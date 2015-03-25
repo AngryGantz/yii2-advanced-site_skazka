@@ -74,6 +74,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 if (in_array($idcat, $cats)) echo $this->render('//goods/_listother', ['grp1' => $model,]); 
 
             ?>
+            <div class="clear"></div>
         </div>
         <!-- end col-lg-8 -->
     </div>
