@@ -27,8 +27,8 @@ foreach ($grp1 as $item => $value) {
         </a>
         <!-- begin lblblock1  -->
         <div class="lblblock1">
-           <p> <span class="titblue">Состав: &nbsp;</span>
-            <span><?php echo $value->sostav; ?></span></p>
+           <p> <span class="titblue">Материал: &nbsp;</span>
+            <span><?php echo $value->material; ?></span></p>
         </div>
         <!-- end lblblock1 -->
         <div class="clear"></div>
