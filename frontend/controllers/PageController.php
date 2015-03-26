@@ -20,6 +20,6 @@ class PageController extends Controller
         if(!$model){
             throw new NotFoundHttpException(Yii::t('frontend', 'Page not found'));
         }
-        return $this->render('view', ['model'=>$model]);
+        return $this->render('view', ['model'=>$model, 'slug' => $slug]);
     }
 }
