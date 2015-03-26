@@ -30,14 +30,14 @@ function init () {
     myMap = new ymaps.Map('map', {
         // При инициализации карты обязательно нужно указать
         // её центр и коэффициент масштабирования.
-        center: [43.238298,76.800548], 
+        center: [43.257589,76.874035], 
         zoom: 17
     }),
       myGeoObject = new ymaps.GeoObject({
             // Описание геометрии.
             geometry: {
                 type: "Point",
-                coordinates: [43.237699,76.80175]
+                coordinates: [43.257589,76.874035]
             },  
             // Свойства.
             properties: {
