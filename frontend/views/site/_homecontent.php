@@ -1,6 +1,6 @@
-        <p class="titbread"> 
+        <p class="titbreadh"> 
             <img src="<?php echo  Yii::getAlias('@web').'/img/arrow1.png' ?>" alt="">    
-            ПРУЖИННЫЕ БОНЕЛЬ     
+            <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '1']);  ?>" title="">ПРУЖИННЫЕ БОНЕЛЬ</a>
         </p>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp1,]); ?>
         <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '1']);  ?>" title=""><div class=" arrow"></div></a>
@@ -8,9 +8,9 @@
         <!-- <img src="<?php echo  Yii::getAlias('@web').'/img/arrow2.png' ?>" alt="">     -->
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p class="titbread"> 
+        <p class="titbreadh"> 
             <img src="<?php echo  Yii::getAlias('@web').'/img/arrow1.png' ?>" alt="">    
-            НЕЗАВИСИМЫЕ ПРУЖИНЫ    
+            <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ</a>
         </p>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp2,]); ?>        
         <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title=""><div class=" arrow"></div></a>
@@ -18,9 +18,9 @@
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>
-        <p class="titbread"> 
+        <p class="titbreadh"> 
             <img src="<?php echo  Yii::getAlias('@web').'/img/arrow1.png' ?>" alt="">    
-            ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ   
+            <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>
         </p>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp3,]); ?>        
          <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '3']);  ?>" title=""><div class=" arrow"></div></a>

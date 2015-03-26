@@ -125,11 +125,30 @@
 	color: #662D91;
 	
 }
+
+.titbreadsm{
+	font-size: 13px;
+	color: #999999;
+}
+
 .titbread a{
 	font-size: 13px;
 	color: #999999;
 	
 }
+
+.titbreadh{
+	font-family: UbuntuR;
+	font-size: 29px;
+	color: #662D91;
+}
+
+.titbreadh a{
+	font-family: UbuntuR;
+	font-size: 29px;
+	color: #662D91;
+}
+
 
 .lincdiffwrap{
 	text-align: right;

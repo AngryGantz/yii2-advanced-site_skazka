@@ -50,15 +50,15 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php
                if ($idcat==1) echo '
                     ПРУЖИННЫЕ БОНЕЛЬ /
-                    <a href="index?idcat=2" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ / </a>&nbsp;
+                    <a href="index?idcat=2" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ</a><span class="titbreadsm">&nbsp;&nbsp;&nbsp;/&nbsp;</span>
                     <a href="index?idcat=3" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>';
                if ($idcat==2) echo '
                     НЕЗАВИСИМЫЕ ПРУЖИНЫ /
-                    <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ / </a>&nbsp;
+                    <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ</a><span class="titbreadsm">&nbsp;&nbsp;&nbsp;/&nbsp;</span>
                     <a href="index?idcat=3" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>';
                if ($idcat==3) echo '
                     ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ /
-                    <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ / </a>&nbsp;
+                <a href="index?idcat=1" title="">ПРУЖИННЫЕ БОНЕЛЬ</a><span class="titbreadsm">&nbsp;&nbsp;&nbsp;/&nbsp;</span>
                     <a href="index?idcat=2" title="">НЕЗАВИСИМЫЕ ПРУЖИНЫ</a>';
                 $cats = array(4, 5, 6, 7,8,9,10);
                 if (in_array($idcat, $cats)) echo $catname;
