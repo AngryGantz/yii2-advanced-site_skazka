@@ -19,27 +19,27 @@ $this->params['breadcrumbs'][] = $this->title;
             <img src="<?= $model->pic ?>" class="viewpic">
             <table class="viewtbl1">
                 <tr class="viewtr1">
-                    <td class="viewtd1"><?php if (isset($model->bl1pic)) { ?><img src="<?= $model->bl1pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl1pic)) { ?><img src="<?= $model->bl1pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl1 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl2pic)) { ?><img src="<?= $model->bl2pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl2pic)) { ?><img src="<?= $model->bl2pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl2 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl3pic)) { ?><img src="<?= $model->bl3pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl3pic)) { ?><img src="<?= $model->bl3pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl3 ?></td>
                 </tr>
                 <tr class="viewtr1">
-                    <td class="viewtd1"><?php if (isset($model->bl4pic)) { ?><img src="<?= $model->bl4pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl4pic)) { ?><img src="<?= $model->bl4pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl4 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl5pic)) { ?><img src="<?= $model->bl5pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl5pic)) { ?><img src="<?= $model->bl5pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl5 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl6pic)) { ?><img src="<?= $model->bl6pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl6pic)) { ?><img src="<?= $model->bl6pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl6 ?></td>
                 </tr>
                 <tr class="viewtr1">
-                    <td class="viewtd1"><?php if (isset($model->bl7pic)) { ?><img src="<?= $model->bl7pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl7pic)) { ?><img src="<?= $model->bl7pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl7 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl8pic)) { ?><img src="<?= $model->bl8pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl8pic)) { ?><img src="<?= $model->bl8pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl8 ?></td>
-                    <td class="viewtd1"><?php if (isset($model->bl9pic)) { ?><img src="<?= $model->bl9pic ?>" alt=""><?php } ?></td>
+                    <td class="viewtd1"><?php if (!empty($model->bl9pic)) { ?><img src="<?= $model->bl9pic ?>" alt=""><?php } ?></td>
                     <td class="viewtd1"><?= $model->bl9 ?></td>
                 </tr>
             </table>
