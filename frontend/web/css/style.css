@@ -109,10 +109,10 @@ a.desc:after {
 
 .navbar-fixed-top {
   top: 164px;
-  height: 61px;
+  height: 45px;
   border-width: 0 0 1px 0;
   position: static;
-  background: url(../img/vawes.jpg) #1d7ae2;
+  background: url(../img/vawes2.png) #1d7ae2;
   background-repeat: no-repeat;
   
 
@@ -125,18 +125,18 @@ a.desc:after {
 .navbar-inverse .navbar-nav > li > a{
   color: #FFF;
   margin-top: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navbar-inverse .navbar-nav .active a{
   color: #6dcff6;
   background-color: #1c79e2;
-  /*margin-top: 7px;*/
 }
 
 .navbar-inverse .navbar-nav .active a:hover{
   color: #6dcff6;
   background-color: #1c79e2;
-  /*margin-top: 7px;*/
 }
 
 .navbar{

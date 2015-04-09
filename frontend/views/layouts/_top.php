@@ -4,10 +4,10 @@
 	<div class="cloud">
 		<div class="topbg">
 			<div class="logo">
-				<a href="/" title=""><img  src="/img/logo.png" alt=""></a>
+				<a href="/" title=""><img  src="/img/logo2.png" alt=""></a>
 			</div>
 			<div class="topcall">
-				<a class="callorder" data-articul="" href="callorder" title=""><img  src="/img/topcall.png" alt=""></a>
+				<a class="callorder" data-articul="" href="callorder" title=""><img  src="/img/topcall2.png" alt=""></a>
 			</div>			
 		</div>
 		<div class="clear"></div>

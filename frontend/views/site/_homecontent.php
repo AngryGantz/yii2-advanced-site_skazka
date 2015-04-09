@@ -20,7 +20,7 @@
         <p>&nbsp;</p>
         <p class="titbreadh"> 
             <img src="<?php echo  Yii::getAlias('@web').'/img/arrow1.png' ?>" alt="">    
-            <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '2']);  ?>" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>
+            <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '3']);  ?>" title="">ЛАТЕКСНЫЕ И БЕСПРУЖИННЫЕ</a>
         </p>
         <?php echo $this->render('//goods/_listcards', ['grp1' => $grp3,]); ?>        
          <a href="<?php echo \Yii::$app->urlManager->createUrl(['goods/index', 'idcat' => '3']);  ?>" title=""><div class=" arrow"></div></a>
